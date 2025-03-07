@@ -32,7 +32,7 @@ export default function Register() {
 
     return (
         <div className="flex items-center justify-center bg-gray-100 p-2">
-            <div className="mt-15 p-4 bg-white shadow-lg rounded-lg w-full max-w-md max-h-screen overflow-auto">
+            <div className="mt-35 p-4 bg-white shadow-lg rounded-lg w-full max-w-md max-h-screen overflow-auto">
                 <h1 className="text-2xl font-bold text-center mb-3">Register</h1>
                 <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
@@ -96,7 +96,7 @@ export default function Register() {
                         />
                         <span
                             onClick={togglePasswordVisibility}
-                            className="absolute inset-y-0 right-0 pr-3 flex items-center cursor-pointer"
+                            className="mt-7 absolute inset-y-0 right-0 pr-3 flex items-center cursor-pointer"
                         >
                             {showPassword ? "🙈" : "👁️"}
                         </span>
@@ -114,13 +114,13 @@ export default function Register() {
                         />
                         <span
                             onClick={togglePasswordVisibility}
-                            className="absolute inset-y-0 right-0 pr-3 flex items-center cursor-pointer"
+                            className="mt-7 absolute inset-y-0 right-0 pr-3 flex items-center cursor-pointer"
                         >
                             {showPassword ? "🙈" : "👁️"}
                         </span>
                     </div>
                     <div className="col-span-1 md:col-span-2 flex justify-center">
-                        <button type="submit" className="w-full px-6 py-3 bg-blue-500 text-white rounded">Register</button>
+                    <button type="submit" className="w-full px-6 py-3 bg-blue-500 text-white rounded transition duration-300 ease-in-out transform hover:bg-blue-600">Register</button>
                     </div>
                 </form>
             </div>
